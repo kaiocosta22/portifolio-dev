@@ -66,6 +66,7 @@ nav ul li a{
 .me{
     display:flex;
     padding: 50px;
+    height: 500px;
     justify-content: center;
     align-items: center;
     gap: 80px;
@@ -80,11 +81,46 @@ nav ul li a{
 span{
     color:var(--third-color);
 }
-.about{
-  text-align: center;
-  justify-content: center;
-  
+ .about div{
+  padding: 15px;
+  gap: 50px;
 }
+
+ section .sobre{
+    margin-top: 70px;
+    text-align: center;
+    gap: 55px;
+}
+.sobre h2{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.conhecimentos{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.conhecimento-card{
+    background: rgba( 0, 0, 0, 0 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:var(--third-color) ;
+    padding: 50px 30px;
+    width: 85px;
+    font-size: 20px;
+    border-bottom: var(--third-color) 4px solid;
+    box-shadow: 0 3px 10px -5px var(--third-color);
+}
+.conhecimento-card i{
+    font-size: 40px;
+    margin-top: 5px;
+}
+
 @media screen and (max-width:800px) {
     .me{
         display: flex;
