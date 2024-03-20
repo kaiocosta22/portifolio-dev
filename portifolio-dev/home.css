@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: 0;
     font: chakra petch;
+    letter-spacing: 1px;
 }
 header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -17,6 +18,10 @@ header {
     padding-inline: 25px;
    }
 
+   html{
+       scroll-behavior: smooth;
+   }
+
    .logo{
        max-width: 70px;
    }
@@ -25,12 +30,16 @@ header {
     --third-color: #1c4c96; /**/
     --primary-color: white; /*background*/
     --secondary-color: #000; /*font*/
+    --fourth-color:#607ec9 ; /*hover bt*/
+
 }
 .dark-theme{
     transition: 0.5s;
     --third-color:#607ec9;/**/
     --primary-color: black;/*background*/
     --secondary-color: #fff; /*font*/
+    --fourth-color:#1c4c96 ; /*hover bt*/
+
 }
 
 #icon{
@@ -75,7 +84,27 @@ nav ul li a{
     gap: 80px;
 }
 .me2 h2{
-  font-size: 28px;
+  font-size: 38px;
+}
+.me2 p{
+    font-size: 20px;
+}
+button a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+button{
+    margin-top: 5px;
+    padding: 10px 20px;
+    background: var(--third-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background: var(--fourth-color);
 }
 
 #foto{
@@ -95,14 +124,14 @@ span{
     gap: 55px;
 }
 .sobre{
-    height: 400px;
+    height: 500px;
 }
 .about {
     padding-inline: 155px;
     margin-bottom: 25px;
 }
 .about h2{
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 .about p{
     text-align: justify;
@@ -215,12 +244,27 @@ span{
     justify-content: space-between;
     padding: 40px 85px;
 }
+
+.email h3{
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.phone h3{
+    font-size: 18px;
+    margin-bottom: 3px;   
+}
 .social i{
     padding-left: 10px;
     margin-top: 5px;
     font-size: 18px;
     cursor: pointer;
     color: var(--secondary-color);
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    color: var(--secondary-color);
+    font-size: 18px;
 }
 @media screen and (max-width:800px) {
     .me{
