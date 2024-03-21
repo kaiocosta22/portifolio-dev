@@ -74,6 +74,10 @@ nav ul li a{
     text-decoration: none;
     color: var(--secondary-color);
 }
+nav ul li a:hover{
+    color: var(--fourth-color);
+    transition: 0.5s ease;
+}
 
 .me{
     display:flex;
@@ -102,6 +106,7 @@ button{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 button:hover{
     background: var(--fourth-color);
@@ -186,6 +191,7 @@ span{
     font-size: 30px;
     margin-top: 150px;
     margin-bottom: 35px;
+    
 }
 
 .project {
@@ -228,37 +234,61 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: 100px;
-    background: var(--third-color);
+    border-bottom: 2px solid var(--third-color);
+
 }
 
 .como h1{
     align-content: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 35px;
+    text-shadow: 1px 4px 5px var(--third-color);
 }
 
 .redes{
     display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
     justify-content: space-between;
-    padding: 40px 85px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-inline: 100px;
 }
 
 .email h3{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 3px;
 }
+.email2{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
 .phone h3{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 3px;   
 }
+.phone2{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.social{
+    font-size: 22px;
+}
 .social i{
-    padding-left: 10px;
+    padding-left: 20px;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     color: var(--secondary-color);
+}
+.social i:hover{
+    color: var(--fourth-color);
+    transition: 0.5s ease;
 }
 footer{
     text-align: center;
@@ -303,4 +333,13 @@ footer{
     .projects p{
         font-size: 13px;
       }
+
+    .email2{
+    justify-items: center;
+  }
+    .como h1{
+        font-size: 25px;
+        text-shadow: 1px 2px 3px var(--third-color);
+    }
+
 }
